@@ -66,7 +66,7 @@ PM_START_TEXT = f"""
 Hey there! my name is *{dispatcher.bot.first_name}*.
 Any questions on how to use me? use /help
 
-Join Our [Group](https://t.me/userbotindo) If You wanna Report Issue 🙂
+
 
 I'm here to make your group management fun and easy!
 I have lots of handy features ☺️ such as :
@@ -82,10 +82,10 @@ Wanna Add me to your Group? Just click the button below!
 buttons = [
     [
         InlineKeyboardButton(
-            text="Add to Group 👥", url="t.me/userbotindobot?startgroup=true"
+            text="Add to Group 👥", url="t.me/AyameNakiriBot?startgroup=true"
         ),
         InlineKeyboardButton(
-            text="Gban Logs 🚫", url="https://t.me/UserIndoBotBannedLog"
+            text="Gban Logs 🚫", url="https://t.me/AyameNakiriGban"
         ),
     ]
 ]
@@ -97,9 +97,9 @@ buttons += [
             text="Help & Commands ❔",
             url=f"t.me/{dispatcher.bot.username}?start=help",
         ),
-        InlineKeyboardButton(
-            text="Support Group 🎗️", url="https://t.me/userbotindo"
-        ),
+
+          
+
     ]
 ]
 
@@ -275,7 +275,7 @@ def start(update, context):
 
         else:
             update.effective_message.reply_photo(
-                "https://i.ibb.co/zJdLsyg/Userindobot.png",
+                "https://www.pixiv.net/member_illust.php?mode=medium&illust_id=86280798",
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
